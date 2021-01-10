@@ -33,17 +33,3 @@ jupyter notebook finding_donors.ipynb
 ```
 
 This will open the iPython Notebook software and project file in your browser.
-
-### Pipeline 
-My pipeline consist of the follwoing steps, and the code is called `finding_donors.ipynb`. I used the following libraries
-
-1. Importing data
-```
-
-```
-2. Exploring the data, e.g. computing the number records for each output class 
-```
-
-```
-
-3. Preprocessing the data
