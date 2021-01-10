@@ -1,11 +1,47 @@
-# Intro to Machine Learning - TensorFlow Project
+# Supervised Learning (Image classifier) 
+## using TensorFlow and Keras
+This project is part of the CharityML project for [the Udacity course: Intro to Machine Learning with TensorFlow](https://www.udacity.com/course/intro-to-machine-learning-with-tensorflow-nanodegree--nd230), and [its github repository](https://github.com/udacity/intro-to-ml-tensorflow). 
 
-Project code for Udacity's Intro to Machine Learning with TensorFlow Nanodegree program. In this project, you will first develop code for an image classifier built with TensorFlow, then you will convert it into a command line application.
+In this project, first  code for an image classifier built with TensorFlow is developed, then it will be converted it into a command line application.
 
-In order to complete this project, you will need to use the GPU enabled workspaces within the classroom.  The files are all available here for your convenience, but running on your local CPU will likely not work well.
+### Goal
+Classify images of flowers to 102 diffrent categories.
 
-You should also only enable the GPU when you need it. If you are not using the GPU, please disable it so you do not run out of time!
 
 ### Data
+A [dataset](https://www.tensorflow.org/datasets/catalog/oxford_flowers102) from Oxford of 102 flower categories is used. This dataset has 1,020 images in the training and avaluation set, and 6,149 images in the test set.
 
-The data for this project is quite large - in fact, it is so large you cannot upload it onto Github.  If you would like the data for this project, you will want download it from the workspace in the classroom.  Though actually completing the project is likely not possible on your local unless you have a GPU.  You will be training using 102 different types of flowers, where there ~20 images per flower to train on.  Then you will use your trained classifier to see if you can predict the type for new images of the flowers.
+## Pretarined model
+A [MobileNet pre-trained network](https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4) from TensorFlow Hub is used.
+The model is used without its last layer, and some fully connected layers with dropout is added sequentially to be trained on the data. 
+### Code
+
+The code is provided in the `finding_donors.ipynb` notebook file. the `visuals.py` Python file and the `census.csv` dataset file is used. 
+
+### Run
+
+In a terminal or command window, navigate to the top-level project directory `finding_donors/` (that contains this README) and run one of the following commands:
+
+```bash
+ipython notebook finding_donors.ipynb
+```  
+or
+```bash
+jupyter notebook finding_donors.ipynb
+```
+
+This will open the iPython Notebook software and project file in your browser.
+
+### Pipeline 
+My pipeline consist of the follwoing steps, and the code is called `finding_donors.ipynb`. I used the following libraries
+
+1. Importing data
+```
+
+```
+2. Exploring the data, e.g. computing the number records for each output class 
+```
+
+```
+
+3. Preprocessing the data
