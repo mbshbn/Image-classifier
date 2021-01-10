@@ -2,7 +2,7 @@
 ## using TensorFlow and Keras
 This project is part of the CharityML project for [the Udacity course: Intro to Machine Learning with TensorFlow](https://www.udacity.com/course/intro-to-machine-learning-with-tensorflow-nanodegree--nd230), and [its github repository](https://github.com/udacity/intro-to-ml-tensorflow). 
 
-In this project, first  code for an image classifier built with TensorFlow is developed, then it will be converted it into a command line application.
+In this project, first a code for an image classifier is built with TensorFlow and a Keras model is generated, then it will be converted it into a command line application. the command line application takes an image and the trained Keras model, and then returns the top K most likely class labels along with the probabilities.
 
 ### Goal
 Classify images of flowers to 102 diffrent categories.
