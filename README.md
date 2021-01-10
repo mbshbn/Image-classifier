@@ -25,11 +25,19 @@ The code is provided in the `finding_donors.ipynb` notebook file. the `visuals.p
 In a terminal or command window, navigate to the top-level project directory `finding_donors/` (that contains this README) and run one of the following commands:
 
 ```bash
-ipython notebook finding_donors.ipynb
+ipython notebook Project_Image_Classifier_Project.ipynb.ipynb
 ```  
 or
 ```bash
-jupyter notebook finding_donors.ipynb
+jupyter notebook Project_Image_Classifier_Project.ipynb.ipynb
 ```
 
 This will open the iPython Notebook software and project file in your browser.
+
+or for the python application run one of the follwoing:
+```bash
+python predict.py /path/to/image best_model
+python predict.py /path/to/image best_model --top_k 5
+python predict.py /path/to/image best_model --category_names label_map.json
+``` 
+It will print the top_k or 3 most probable predicted classes for the image. If the `label_map.json` is also given, the the name of each flower representing each class will be shown.
