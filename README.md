@@ -11,9 +11,11 @@ Classify images of flowers to 102 diffrent categories.
 ### Data
 A [dataset](https://www.tensorflow.org/datasets/catalog/oxford_flowers102) from Oxford of 102 flower categories is used. This dataset has 1,020 images in the training and avaluation set, and 6,149 images in the test set.
 
-## Pretarined model
-A [MobileNet pre-trained network](https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4) from TensorFlow Hub is used.
-The model is used without its last layer, and some fully connected layers with dropout is added sequentially to be trained on the data. 
+## Model
+* A [MobileNet pre-trained network](https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4) from TensorFlow Hub is used.
+The model is used without its last layer, and some fully connected layers with dropout is added sequentially to be trained on the data.
+
+* A model using Conv2D and some fully connected layers with dropout is added sequentially to be trained on the data.
 ### Code
 
 The code is provided in the `finding_donors.ipynb` notebook file. the `visuals.py` Python file and the `census.csv` dataset file is used. 
